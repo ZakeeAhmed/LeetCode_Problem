@@ -1,6 +1,4 @@
-import java.util.*;
-
-class Solution {
+public class Solution {
     public int majorityElement(int[] nums) {
         Arrays.sort(nums);
         int n = nums.length;
@@ -10,10 +8,10 @@ class Solution {
         }
         return nums[n / 2];
     }
-}
 
-public static void main(String[] args) {
-    Solution sol = new Solution();
-    int[] nums = { 3, 2, 3 };
-    System.out.println(sol.majorityElement(nums)); // Output: 3
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int[] nums = { 3, 2, 3 };
+        System.out.println(sol.majorityElement(nums)); // Output: 3
+    }
 }
